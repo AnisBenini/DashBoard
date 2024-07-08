@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | BENINI.</title>
+    <link rel="icon" href="img/letter-b .png" type="image/x-icon"/>
+    <link rel="stylesheet" href="styles/fontawesome.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <script defer src="scripts/dashboard.js"></script>
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar--top">
+                <a href="index.html" class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard2-data" viewBox="0 0 16 16">
+                        <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z"/>
+                        <path d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z"/>
+                        <path d="M10 7a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1"/>
+                      </svg>
+                    <p> myDashBoard</p>
+                </a>
+
+                <button class="sidebar--collapse-btn">
+                    <svg class="icon-24" viewBox="0 0 32 32">
+                        <path d="M20 7L11 16M11 16L20 25" fill="none" fill-rule="evenodd" stroke=currentColor
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <svg class="icon-24" viewBox="0 0 32 32">
+                        <path d="M0 0L32 0L32 32L0 32L0 0L0 0Z" fill="none" fill-rule="evenodd" stroke="none" />
+                        <path d="M7 7.98016L25 8.01981" fill-rule="evenodd" stroke=currentColor stroke-width="2" stroke-linecap="round" />
+                        <path d="M7 23.0198L25 23.0198" fill-rule="evenodd" stroke=currentColor stroke-width="2" stroke-linecap="round" />
+                        <path d="M7 15.0198L25 15.0198" fill-rule="evenodd" stroke=currentColor stroke-width="2" stroke-linecap="round" />
+                    </svg>
+
+                    <svg class="icon-24" viewBox="0 0 32 32">
+                        <path d="M0 0L32 0L32 32L0 32L0 0L0 0Z" fill="none" fill-rule="evenodd" stroke="none" />
+                        <path d="M7.16116 7.16116L24.8388 24.8388" fill-rule="evenodd" stroke=currentColor stroke-width="2" stroke-linecap="round" />
+                        <path d="M7.16116 24.8388L24.8388 7.16116" fill-rule="evenodd" stroke=currentColor stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="sidebar--tab-controls">
+                <button class="sidebar--btn tab-control tab-control__selected">
+                    <i class="fa-solid fa-chart-simple  sidebar--btn--icon icon-32"></i>
+                    <p>Dashboard</p>
+                </button>
+
+                <button class="sidebar--btn tab-control">
+                    <i class="fa-sharp fa-regular fa-calendar-days  sidebar--btn--icon icon-32"></i>
+                    <p>Events</p>
+                </button>
+               
+                <button class="sidebar--btn tab-control">
+                    <i class="fa fa-user   sidebar--btn--icon icon-32"></i>
+                    <p>Our Clients</p>
+                </button>
+
+                <button class="sidebar--btn tab-control">
+                    <i class="fa-solid fa-user-tie  sidebar--btn--icon icon-32 "></i>
+                    <p>Our Organizers</p>
+                </button>
+            </div>
+
+            <div class="sidebar--bottom">
+                <div class="sidebar--divider"></div>
+                <button class="sidebar--btn">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <p>Log Out</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <header class="navbar">
+                <div class="tab--headers">
+                    <div class="tab--header tab--header__selected">
+                        <p class="tab--title">Statistics</p>
+                        <select class="select-btn statistics-option">
+                            <option value="value 1">Event 1</option>
+                            <option value="value 2">Event 2</option>
+                            <option value="value 3">Event 3</option>
+                            <option value="value 4">Event 2</option>
+                            <option value="value 5">Event 5</option>
+                            <option value="value 6">Event 6</option>
+                        </select>
+                    </div>
+
+                    <div class="tab--header">
+                        <p class="tab--title">Events</p>
+                    </div>
+                    
+                    <div class="tab--header">
+                        <p class="tab--title">Our Clients</p>
+                    </div>
+                    
+                    <div class="tab--header">
+                        <p class="tab--title">Our Organizers</p>
+                    </div>
+                </div>
+                
+
+                <div class="primary-header-right">
+                        <div class="switch-theme-container">
+                          <input class="switch-theme-btn" type="checkbox" name="switch theme">
+                          <div class="switch-theme-icons">
+                            <i class="moon-icon fa-solid fa-moon"></i>
+                            <i class="sun-icon fa-solid fa-sun"></i>
+                          </div>
+                        </div>
+                        <div class="seperator"></div>                
+                        <div class="primary-header-user">
+                          <a href="#" class="primary-header-account">
+                            <i class="fa-solid fa-user"></i>
+                          </a>
+                        </div>
+
+                </div>
+            </header>
+            
+            <main class="tabs">
+                <div class="tab tab__grades tab__selected">
+                    <div class="tab--container">
+                        <div class="chart-card--wrapper">
+                            <div class="card card__compare">
+                                <header class="card--header">
+                                    <p class="card--title">Tickets Sold </p>
+                                    <div class="compare-chart--info-wrapper">
+                                        <div class="chart--info">
+                                            <div class="chart--info-circle"></div>
+                                            <p>Reserved</p>
+                                        </div>
+                                        <div class="chart--info">
+                                            <div class="chart--info-circle"></div>
+                                            <p>Availability</p>
+                                        </div>
+                                    </div>
+                                </header>
+                                <main class="compare-chart">
+                                    <div class="bars">
+                                        <div class="bar--wrapper">
+                                            <div style="height: 60%" data-value="2500" class="bar bar__s1"></div>
+                                            <div style="height:45%" data-value="1200" class="bar bar__s2"></div>
+                                            <p class="bar--text">BT</p>
+                                        </div>
+                                        <div class="bar--wrapper">
+                                            <div style="height:50%" data-value="2000" class="bar bar__s1"></div>
+                                            <div style="height:45%" data-value="1600" class="bar bar__s2"></div>
+                                            <p class="bar--text">RB</p>
+                                        </div>
+                                        <div class="bar--wrapper">
+                                            <div style="height:70%" data-value="3000" class="bar bar__s1"></div>
+                                            <div style="height:23%" data-value="400" class="bar bar__s2"></div>
+                                            <p class="bar--text">RT</p>
+                                        </div>
+                                        <div class="bar--wrapper">
+                                            <div style="height:91%" data-value="9500" class="bar bar__s1"></div>
+                                            <div style="height:50%" data-value="3800" class="bar bar__s2"></div>
+                                            <p class="bar--text">LB</p>
+                                        </div>
+                                        
+                                        <div class="bar--wrapper">
+                                            <div style="height:20%" data-value="900" class="bar bar__s1"></div>
+                                            <div style="height:8%" data-value="750" class="bar bar__s2"></div>
+                                            <p class="bar--text">VIP</p>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="axises">
+                                        <div class="axis">
+                                            <p class="number">10000</p>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div class="axis">
+                                            <p class="number">5000</p>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div class="axis">
+                                            <p class="number">2000</p>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div class="axis">
+                                            <p class="number">500</p>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div class="axis">
+                                            <p class="number">0</p>
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                </main>
+                                
+                            
+                            </div>
+
+                            <div class="card card__gauge">
+                                <header class="card--header">
+                                    <p class="card--title">Sales Percentage</p>
+                                </header>
+                                <main class="gauge-chart--wrapper">
+                                    <div class="gauge-chart">
+                                        <svg class="gauge-chart--circles" viewBox="0 0 250 250">
+                                            <circle class="gauge-chart--back" style="fill:none;stroke-width:23.8095"
+                                                cx="121.04727" cy="126.98376" r="107.14255" StrockWidth="24"
+                                                Radius="120" InnerRadius="108" id="circle880" />
+                                            <circle class="gauge-chart--cc"
+                                                style="fill:none;stroke-width:31.7459;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:648.263, 648.263;stroke-dashoffset:248.015"
+                                                cx="-126.98376" cy="121.04727" r="107.14255" StrockWidth="32"
+                                                Radius="120" InnerRadius="104" Circumference="653.451271947"
+                                                Arc="653.451271947" DashArray="653.451271947,653.451271947"
+                                                transform="rotate(-90)" help="251.327412287" id="circle882" />
+                                            <circle class="gauge-chart--exam"
+                                                style="fill:none;stroke-width:39.6824;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:623.331, 623.331;stroke-dashoffset:373.998;stroke-opacity:1"
+                                                cx="-126.98376" cy="121.04727" r="107.14255" StrockWidth="40"
+                                                Radius="120" InnerRadius="100" Circumference="628.318530718"
+                                                Arc="628.318530718" DashArray="628.318530718,628.318530718"
+                                                transform="rotate(-90)" id="circle884" />
+                                        </svg>
+
+                                        <p class="score score__large">
+                                            63.5<span class="score--total">%</span>
+                                        </p>
+                                    </div>
+                                    <div class="gauge-chart--info-wrapper">
+                                        <div class="chart--info">
+                                            <div class="chart--info-circle"></div>
+                                            <p>Sold</p>
+                                        </div>
+                                        <div class="chart--info">
+                                            <div class="chart--info-circle"></div>
+                                            <p>Not yet</p>
+                                        </div>
+                                    </div>
+                                    
+                                </main>
+                            </div>
+                        </div>
+                       
+                    </div>
+                  
+                    
+                </div>
+           
+                <div class="tab tab__courses">
+                    <div class="tab--container">
+                        <div class="photo-grid">
+                            <div class="photo-grid--item">
+                                <div class="photo-grid--item-image">
+                                    <img src="img/1.jpg" alt="Image 1">
+                                </div>
+                                <div class="photo-grid--item-title">Event 1</br><div class="NameOrg">Egypt VS Uruguay</div></div>
+                            </div>
+                            <div class="photo-grid--item">
+                                <div class="photo-grid--item-image">
+                                    <img src="img/2.jpg" alt="Image 2">
+                                </div>
+                                <div class="photo-grid--item-title">Event 2</br> <div class="NameOrg">Argentina VS Mexico</div></div>
+                            </div>
+                            <div class="photo-grid--item">
+                                <div class="photo-grid--item-image">
+                                    <img src="img/3.jpg" alt="Image 3">
+                                </div>
+                                <div class="photo-grid--item-title">Event 3</br><div class="NameOrg">Qatar VS Allemand</div></div>
+                            </div>
+                            <div class="photo-grid--item">
+                                <div class="photo-grid--item-image">
+                                    <img src="img/4.jpg" alt="Image 4">
+                                </div>
+                                <div class="photo-grid--item-title">Event 4 </br><div class="NameOrg">Spain VS Allemand</div></div>
+                            </div>
+                            <div class="photo-grid--item">
+                                <div class="photo-grid--item-image">
+                                    <img src="img/5.jpg" alt="Image 5">
+                                </div>
+                                <div class="photo-grid--item-title">Event 5</br><div class="NameOrg">Allemand VS japan </div></div>
+                            </div>
+                            <div class="photo-grid--item">
+                                <div class="photo-grid--item-image">
+                                    <img src="img/6.jpg" alt="Image 6">
+                                </div>
+                                <div class="photo-grid--item-title">Event 6</br><div class="NameOrg">Barcelona VS Real madrid</div></div>
+                            </div>
+                            <!-- Add as many grid photo elements as needed -->
+                        </div>
+                    </div>
+                </div>
+            
+                
+                <div class="tab tab__clients">
+                    <!-- Tab content for "Our Clients" -->
+                    <div class="tab--container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Phone number</th>
+                                    <th>Deletion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>john.doe@example.com</td>
+                                    <td>+1 234567890</td>
+                                    <td><button class="D">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Jane Smith</td>
+                                    <td>jane.smith@example.com</td>
+                                    <td>+1 987654321</td>
+                                    <td><button class="D">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Walter White</td>
+                                    <td>WW.Cock@example.com</td>
+                                    <td>+1 985528810</td>
+                                    <td><button class="D">Delete</button></td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                
+                <div class="tab tab__organizers">
+                    <!-- Tab content for "Our Organizers" -->
+                    <div class="tab--container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Bank account</th>
+                                    <th>Email</th>
+                                    <th>Business registration</th>
+                                    <th>Approve & Refuse</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Event Management Co.</td>
+                                    <td>1234567890</td>
+                                    <td>info@eventco.com</td>
+                                    <td>ABC123456789</td>
+                                    <td><button class="A"> ✔ </button><button class="D"> ✖ </button></td>
+                                </tr>
+                                <tr>
+                                    <td>Conference Solutions Ltd.</td>
+                                    <td>9876543210</td>
+                                    <td>contact@confsol.com</td>
+                                    <td>XYZ987654321</td>
+                                    <td><button class="A"> ✔ </button><button class="D"> ✖ </button></td>
+                                </tr>
+                                <tr>
+                                    <td>ProbSolver Ltd.</td>
+                                    <td>9234568710</td>
+                                    <td>contact@probsol.com</td>
+                                    <td>1504ppAssni</td>
+                                    <td><button class="A"> ✔ </button><button class="D"> ✖ </button></td>
+                                </tr>
+                                <tr>
+                                    <td>HereWeGo Co.</td>
+                                    <td>1726448200</td>
+                                    <td>info@hellyeah.com</td>
+                                    <td>Azerty12345</td>
+                                    <td><button class="A"> ✔ </button><button class="D"> ✖ </button></td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                   
+</body>
+
+</html>
